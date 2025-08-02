@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.site {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.lado--esquerdo--do--site {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 0.5px solid #D9DCE0;
+}
+
+.topo--do--lado--esquerdo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+.conteiner--do--menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.conteiner--barra--de--pesquisa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 5;
+    height: 100%;
+    padding-right: 20px;
+}
+.barra--pesquisa{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    width: 100%;
+    border-radius: 0px 25px 25px 0px;
+    border: 0px;
+    outline: 0px;
+    padding-left: 12px;
+    background-color: transparent;
+}
+.lista--de--contatos{
+    display: flex;
+    flex-direction: column;
+    flex: 12;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.caixa--do--chat--do--contato{
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    width: 100%;
+}
+.avatar--do--contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+.avatar{
+    height: 48px;
+    width: 48px;
+}
+.infos--do--contato{
+    display: flex;
+    flex-direction: row;
+    flex: 5;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 5;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nome--do--contato{
+    display: flex;
+    align-items: center;
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 5px;
+}
+.ultima--mensagem--do--contato{
+    color: #707991;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+.ultimo--item--do--contato{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 10px;
+    padding-top: 8px;
+    gap: 5px;
+}
+.horas{
+    display: flex;
+    justify-content: flex-end;
+    flex: 0.5;
+    color: #707991;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.nao--visualizado{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+.viwed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+.selecionado{
+    background-color: #F5F5F5;
+}
+
+.lado--direito--do--site{
+    flex: 3.5;
+
+}
+
+.topo--do--lado--direito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    background-color: white;
+}
+.foto--do--perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1.35;
+}
+.foto--do--perfil > img{
+    width: 40px;
+    height: 40px;
+}
+
+.infos--do--perfil {
+    flex: 20;
+    margin-left: 11px;
+}
+.nome--do--perfil {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.visualizao--do--perfil {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #707991;
+}
+.botoes--do--perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: flex-end;
+    padding-right: 20px;
+    gap: 30px;
+    flex: 2;
+}
+.fundo--da--conversa {
+    background-image: url('../images/background.png');
+    height: 100%;
+    flex: 1;
+}
+
+.caixa--de--conversa{
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    height: 100%;
+    gap: 30px;
+}
+.dia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 71px;
+    height: 28px;
+    border-radius: 15px;
+    background: #3d70b86b;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.caixa--de--mensagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    flex: 6;
+    gap: 10px;
+}
+.alinhamento--do--dia{
+    display: flex;
+    justify-content: center;
+}
+
+.boxe--mensagem{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 400px;
+    gap: 5px;
+}
+.mensagem {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.info--mensagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+    font-size: 12px;    
+    font-family: 'Inter', sans-serif;
+}
+.voce {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.enviado {
+    background-color: lightgreen;
+}
+
+.outros{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.recebido{
+    background-color: white;
+}
+
+.barra--de--mensagem{
+    flex: 1;  
+    padding-bottom: 45px;
+}
+.boxe--barra--de--mensagem{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    background-color: white;
+    height: 56px;
+    border-radius: 10px;
+}
+
+.conteiner--emoji{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.conteiner--barra--de--texto{
+    display: flex;
+    align-items: center;
+    flex: 13;
+
+}
+
+.caixa--de--mensagem{
+    flex: 1;
+    height: 100%;
+    outline: 0px;
+    border: 0px;
+    padding-left: 10px;
+}
+
+.conteiner--enviar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.emoji:hover{
+    cursor: pointer;
+}
+.enviar:hover{
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translate(10px);
+    } to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.fade-in{
+    animation: fadeIn 0.5s ease-in-out;
+}
