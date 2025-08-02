@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.topo--nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(83, 0, 143);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.itens--nav:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.conta:hover {
+    cursor: pointer;
+}
+
+.meio--do--site {
+    height: 400px;
+}
+
+.logo--google {
+    display: flex;
+    justify-content: center;
+    margin-top: 210px;
+    flex: 1;
+}
+
+.barra--de--pesquisa {
+    display: flex;
+    align-items: center;
+    padding: 0px 625px;
+}
+
+.search{
+    padding-left: 15px;
+    padding-right: 100px;
+    outline: 0px;
+    border: 0px;
+    height: 36px;
+    width: 600px;
+    border-radius: 25px;
+}
+
+.search--bar{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    background-color: aliceblue;
+    padding-right: 20px;
+    padding-left: 15px;
+    margin-top: 35px;  
+    width: 600px;
+}
+
+.itens--search{
+    display: flex;
+    gap: 20px;
+}
+.itens--search > img:hover{
+    cursor: pointer;
+}
+
+.botao{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.botao--pesquisa{
+    outline: px;
+    border: 0px;
+    padding: 20px;
+    font-weight: lighter;
+}
+.botao--pesquisa:hover{
+    cursor: pointer;
+}
+
+.fim--site {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 29.2%;
+}
+.linha--final{
+    display: flex;
+    padding: 15px 40px;
+}
+.fim--left{
+    font-size: 14px;
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+.fim--left > p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fim--right{
+    font-size: 14px;
+    display: flex;
+    gap: 30px;
+}
+.fim--right > p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fim--site > p {
+    font-size: 15px;
+    margin-left: 33px;
+    margin-bottom: 18px;
+}
